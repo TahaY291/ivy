@@ -1,0 +1,86 @@
+@import "tailwindcss";
+*{
+  box-sizing: border-box ;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-800 font-sans ;
+  }
+
+  h1 {
+    @apply text-4xl font-bold mb-4;
+  }
+
+  h2 {
+    @apply text-3xl font-semibold mb-3;
+  }
+
+  h3 {
+    @apply text-2xl font-medium mb-2;
+  }
+
+  p {
+    @apply text-base leading-relaxed text-gray-700 mb-2;
+  }
+
+  a {
+    @apply text-blue-600 hover:underline;
+  }
+
+  button {
+    @apply px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700;
+  }
+
+  input, textarea, select {
+    @apply border border-gray-300 rounded  w-full focus:outline-none my-1;
+  }
+
+  label {
+    @apply block font-medium mb-1;
+  }
+  li {
+    @apply block font-medium mb-1 text-lg ;
+  }
+  button {
+    @apply block font-medium mb-1 text-[16px] px-5 py-3 cursor-pointer;
+  }
+  
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;                /* top:0; right:0; bottom:0; left:0; */
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 10;
+}
+.image-hover img{
+  cursor: pointer;
+}
+.image1::before {
+  content: "";
+  position: absolute;
+  inset: 0;                /* top:0; right:0; bottom:0; left:0; */
+  background: rgba(2, 87, 21, 0.87);
+}
+
+/* Apply custom scrollbar to the whole document */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+  height: 12px; /* Set the height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: gray; /* Gray background for the track */
+  border-radius: 0; /* Sharp corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #10B981; /* Green color similar to bg-green-500 */
+  border-radius: 0; /* Sharp corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #059669; /* Darker green on hover */
+}

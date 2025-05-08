@@ -1,0 +1,9 @@
+/* Swiper bullet styling */
+.swiper-pagination-bullet {
+    background: #0ef29e;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background: #05c37b;
+  }
+  
